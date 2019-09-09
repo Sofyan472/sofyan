@@ -1,0 +1,47 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Attribute_1_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Product_Hierarchy_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Area",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Time_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Volume_Sales_MSU",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Category_Volume_Share",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Powerapps"
+		}
+	}
+}
