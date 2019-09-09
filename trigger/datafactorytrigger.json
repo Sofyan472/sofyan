@@ -1,0 +1,24 @@
+{
+	"name": "datafactorytrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/fractal123/blobs/",
+			"blobPathEndsWith": "data.csv",
+			"scope": "/subscriptions/66b4286a-00aa-4154-80e4-d65930969a71/resourceGroups/Blob/providers/Microsoft.Storage/storageAccounts/fractal123",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
