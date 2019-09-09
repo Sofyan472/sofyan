@@ -1,0 +1,52 @@
+{
+	"name": "fetch",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.csv",
+				"container": "fractal123"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Attribute 1 Name",
+				"type": "String"
+			},
+			{
+				"name": "Product Hierarchy Code",
+				"type": "String"
+			},
+			{
+				"name": "Area",
+				"type": "String"
+			},
+			{
+				"name": "Time Name",
+				"type": "String"
+			},
+			{
+				"name": "Volume Sales (MSU)",
+				"type": "String"
+			},
+			{
+				"name": "Category Volume Share",
+				"type": "String"
+			}
+		]
+	}
+}
